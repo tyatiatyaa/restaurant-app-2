@@ -1,0 +1,72 @@
+@media screen and (min-width: 520px){
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .header .header_brand {
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .header .header_hamburger {
+      display: none;
+    }
+  
+    .header .header_navigation {
+      position: static;
+      width: 100%;
+      display: inline-flex;
+      justify-content: flex-end;
+    }
+  
+    .header .header_navigation ul li {
+      display: inline-block;
+      width: 90px;
+      height: 44px;
+    }
+   
+    .header .header_navigation ul li a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      font-size: 1.3em;
+    }
+  
+    .hero .hero_inner .hero_content {
+      font-size: 15px;
+    }
+}
+  
+@media screen and (min-width: 650px) {
+    .hero .hero_inner .hero_content {
+      font-size: 23px;
+    }
+    
+    .restaurants_element {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+  
+@media screen and (min-width: 800px) {
+    .restaurants_element {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+  
+@media screen and (min-width: 1200px) {
+    .restaurants_element {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .hero_content {
+      font-size: 25px;
+    }
+  
+    .hero {
+      height: 60%;
+    } 
+}
